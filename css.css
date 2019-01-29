@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+}
+
+#normaalreactie {
+    display: none;
+}
+
+#woordenlabel {
+    padding: 0 19px;
+    display: block;
+    color: black;
+    font-size: 1em;
+}
+
+.profielfoto {
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.reactie {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.reactie p {
+    margin: 0;
+}
+
+.h2 {
+    display: block;
+    text-transform: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.reactie img {
+    float: left;
+    margin: 0 10px;
+}
+
+section {
+    max-width: 90%;
+}
+
+nav {
+    height: 0;
+    transition: .3s;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+nav ul {
+    border-bottom: 0;
+    width: 100%;
+}
+
+article img {
+    width: 100%;
+}
+
+button:focus {
+    outline: #99258d auto 5px;
+}
+
+button {
+    background-color: #99258d;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1em;
+}
+
+a:focus {
+    outline: #99258d auto 5px;
+}
+
+label:focus {
+    background: rgb(246, 222, 161);
+    color: #82207c;
+    cursor: pointer;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+fieldset input:focus {
+    background: rgb(246, 222, 161);
+    color: #82207c;
+    cursor: pointer;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.klapuit {
+    height: 10em;
+}
+
+body {
+    font-family: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+}
+
+#filteren {
+    background: #99258d;
+    color: #FAFAFA;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    font-size: 2em;
+    background: none;
+    color: #82207c;
+    border: none;
+    font-family: "proxima nova", sans-serif;
+    font-weight: 200;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline;
+}
+
+#hamburger:hover {
+    background: none;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-gap: 1em;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+label {
+    display: block;
+}
+
+form {
+    background: #FAFAFA;
+    color: black;
+    font-size: 1em;
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(33, 49, 49);
+    font-size: 2em;
+    margin: auto;
+    display: block;
+}
+
+h2,
+h3 {
+    color: rgb(33, 49, 49);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+article a img {
+    height: 175px;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    display: none;
+}
+
+.containerr input {
+    display: none;
+}
+
+/*
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-style: solid;
+    border: 1em;
+    border-radius: 3px;
+}
+
+.radiomark {
+    border-radius: 50%;
+    color: rgb(233, 181, 38);
+    color: #333333;
+}
+
+.radiolabel {
+    display: inline;
+}
+
+.containerr:hover input ~ .radiomark {
+    background: rgb(246, 222, 161);
+    color: #82207c;
+    cursor: pointer;
+}
+
+.containerr input:checked ~ .radiomark {
+    border-radius: 50%;
+    color: rgb(233, 181, 38);
+    color: #333333;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkmark:focus input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #99258d;
+}
+
+.containerr {
+    background: none;
+    color: #82207c;
+    border: none;
+    font-family: "proxima nova", sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline;
+    line-height: 3em;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset label:hover {
+    background: rgb(246, 222, 161);
+    color: #82207c;
+    cursor: pointer;
+}
+
+select {
+    background: none;
+    border: 1px solid rgba(234, 234, 234);
+    border-radius: 2px;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    -moz-appearance: none;
+    line-height: 40px;
+    font-weight: 350;
+    font-family: inherit;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    font-size: inherit;
+    ;
+}
+
+article {
+    display: inline-block;
+    justify-content: center;
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#verhaalmobiel {
+    width: 100%;
+}
+
+#verhaaltablet {
+    display: none;
+    width: 100%;
+}
+
+#verhaaldesktop {
+    display: none;
+    width: 100%;
+
+}
+
+#logo {
+    display: none;
+}
+
+.rand:hover {
+    outline: solid 5px #99258d;
+    cursor: pointer;
+    transition: ease-in .08s;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 30em;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #99258d;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #99258d;
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.flip {
+    width: 25%;
+    margin: 0px;
+    padding: 5px;
+    background: #99258d;
+    border-radius: 0;
+    color: white;
+}
+
+.flip:hover {
+    background: #FAFAFA;
+    color: rgb(33, 49, 49);
+}
+
+nav ul {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #99258d;
+}
+
+#paars {
+    background: #FAFAFA;
+    color: rgb(33, 49, 49);
+}
+
+#grijs {
+    background: #99258d;
+    color: white;
+}
+
+.filterKnop {
+    display: flex;
+    align-content: flex-end;
+    border-radius: 0.1em;
+    background-color: #99258d;
+    color: white;
+
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+.far.fa-bookmark {
+    margin-left: auto;
+    color: #99258d;
+    font-size: 2em;
+    float: right;
+    transition: 1s ease-in;
+}
+
+.fas.fa-bookmark {
+    display: none;
+    margin-left: auto;
+    color: #99258d;
+    font-size: 2em;
+    float: right;
+    transition: 1s ease-in;
+}
+
+#reactieform {
+    background: #FAFAFA;
+    width: 90%;
+    margin-left: 2%;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+
+/* Dit stukje is vanaf een youtube tutorial https://www.youtube.com/watch?v=ugc_lOKChlM*/
+input.star {
+    display: none;
+    float: left;
+}
+
+.rat {
+    max-width: 450px;
+    text-align: center;
+    margin: auto;
+}
+
+div.stars {
+    display: inline-block;
+}
+
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 40px;
+    color: #99258d;
+    transition: all 0.2s;
+}
+
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #99258d;
+    transition: all 0.2s;
+}
+
+input.star:hover ~ label.star:before {
+    content: '\f005';
+    color: #99258d;
+    transition: 0.4s ease-in;
+    font-size: 45px;
+}
+
+
+input.star-5:checked ~ label.star:before {
+    color: #99258d;
+    text-shadow: 0 0 2px;
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+
+.voor {
+    float: right;
+    padding: 10px;
+    font-size: 40px;
+    color: #99258d;
+    transition: ease-in-out 0.2s;
+    font-family: 'Font Awesome\ 5 Free';
+    font-style: normal;
+    background: white;
+    border: none;
+}
+
+.voor:visited {
+    content: '\f02e';
+    color: #99258d;
+    transition: all 0.2s;
+    font-weight: 900;
+    background-color: aqua;
+}
+
+.voor:hover {
+    content: '\f02e';
+    transition: 0.4s ease-in-out;
+    font-size: 45px;
+    font-weight: 900;
+    color: #99258d;
+}
+
+.voor:before {
+    content: '\f02e';
+    font-family: 'Font Awesome\ 5 Free';
+    font-style: normal;
+}
+
+
+@media (min-width: 650px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        background: #FAFAFA;
+        color: black;
+        font-size: 1em;
+        width: 70%;
+        margin: 0;
+    }
+
+    #verhaalmobiel {
+        display: none;
+    }
+
+    #verhaaltablet {
+        display: block;
+    }
+
+    #verhaaldesktop {
+        display: none;
+    }
+
+    @media (min-width: 940px) {
+        nav {
+            border-radius: 4px;
+            width: 940px;
+            margin: auto;
+            position: relative;
+            height: 100%;
+        }
+
+        #logo {
+            display: block;
+        }
+
+        body {
+            border: solid 8px #99258d;
+            align-content: center;
+        }
+
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: .5em;
+        }
+
+        form {
+            background: #FAFAFA;
+            color: black;
+            font-size: 1em;
+            width: 70%;
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            border-bottom: solid 1px #a6c4c4;
+        }
+
+        nav ul li {
+            text-align: center;
+            padding: 15px;
+            color: #99258d;
+        }
+
+        header {
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #hamburger {
+            display: none;
+        }
+
+        #verhaalmobiel {
+            display: none;
+        }
+
+        #verhaaltablet {
+            display: none;
+        }
+
+        #verhaaldesktop {
+            display: block;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        nav {
+            border-radius: 4px;
+            width: 1138px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 1128px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: .5em;
+        }
+
+        section {
+            width: 1128px;
+            margin: auto;
+        }
+
+        #verhaalmobiel {
+            display: none;
+        }
+
+        #verhaaltablet {
+            display: none;
+        }
+
+        #verhaaldesktop {
+            display: block;
+        }
+    }

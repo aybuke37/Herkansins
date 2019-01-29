@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Verhaaltjes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/62c0135163427c652ae397f327f85010?family=Museo+Sans" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="border">
+        <div id=header>
+            <header>
+                <button id=hamburger><i class="fas fa-bars"></i></button>
+                <nav id=nav>
+                    <ul>
+                        <li><a href="index.html">vluchten</a></li>
+                        <li><a href="Pagina2.html">wow premium</a></li>
+                        <li><a href="pagina3.html">informatie</a></li>
+                        <li><a id=logo href="index.html"><img src="_img/sitelogo.svg" alt=""></a></li>
+                        <li><a href="Pagina4.html">klantenservice</a></li>
+                        <li><a href="Pagina5.html">opgeslagen</a></li>
+                        <li><a href="Pagina6.html">verhaaltjes</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <article>
+                <h1>Alzheimer</h1>
+                <img id=verhaalmobiel class=verhaal src="_img/iphone%20x.png" alt="alzheimer verhaal">
+                <img id=verhaaltablet class=verhaal src="_img/a9@2x.png" alt="alzheimer verhaal">
+                <img id=verhaaldesktop class=verhaal src="_img/Schermafbeelding%202018-11-23%20om%2011.52.46.png" alt="alzheimer verhaal">
+            </article>
+        </main>
+        <section>
+
+            <h1>Reacties</h1>
+            <div id=reactiep>
+                <form action="veraal.html" method="post" id="reactieform">
+                    <h2>Geef een sterrenbeoodeling</h2>
+                    <!-- dit stukje heb ik vanaf een youtube tutorial https://www.youtube.com/watch?v=ugc_lOKChlM-->
+                    <input type="radio" class="star star-5" id="star-5" name="star">
+
+                    <label for="star-5" class="star star-5">
+                    </label>
+
+                    <input type="radio" class="star star-4" id="star-4" name="star">
+
+                    <label for="star-4" class="star star-4">
+                    </label>
+
+                    <input type="radio" class="star star-3" id="star-3" name="star">
+
+                    <label for="star-3" class="star star-3">
+                    </label>
+
+                    <input type="radio" class="star star-2" id="star-2" name="star">
+
+                    <label for="star-2" class="star star-2">
+                    </label>
+
+                    <input type="radio" class="star star-1" id="star-1" name="star">
+
+                    <label for="star-1" class="star star-1">
+                    </label>
+                    <h2>Laat een reactie achter:</h2>
+                    <textarea id="mobielreactie" rows="4" cols="40">Vertel hier wat je van het verhaal vond.</textarea><br />
+                    <textarea id="normaalreactie" rows="4" cols="90">Vertel hier wat je van het verhaal vond.</textarea><br />
+
+                    <label for="anoniem"><input type="checkbox" name="anoniem" checked="checked" id="anoniem">Laat mijn naam zien bij mijn reactie.</label>
+                    <button type="submit" formaction="verhaalmetreactie.html">Verstuur</button>
+                </form>
+            </div>
+
+
+            <div class="reactie">
+                <img class=profielfoto src="_img/99172b20628d0a07d870d3c8078d6a01--istanbul-turkey-towers.jpg" alt="profielfoto">
+                <h2>Klaas Bart</h2>
+                <p>Het was echt een leuk verhaal, ik heb erg genoten tijdens het lezen.</p>
+
+            </div>
+        </section>
+        <script src="java.js"></script>
+    </div>
+</body>
+
+</html>

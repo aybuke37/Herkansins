@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Verhaaltjes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/62c0135163427c652ae397f327f85010?family=Museo+Sans" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="border">
+        <div id=header>
+            <header>
+                <button id=hamburger><i class="fas fa-bars"></i></button>
+                <nav id=nav>
+                    <ul>
+                        <li><a href="index.html">vluchten</a></li>
+                        <li><a href="Pagina2.html">wow premium</a></li>
+                        <li><a href="pagina3.html">informatie</a></li>
+                        <li><a id=logo href="index.html"><img src="_img/sitelogo.svg" alt=""></a></li>
+                        <li><a href="Pagina4.html">klantenservice</a></li>
+                        <li><a href="Pagina5.html">opgeslagen</a></li>
+                        <li><a href="Pagina6.html">verhaaltjes</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <section>
+            <div id="titel">
+                <h1>Verhaaltjes</h1>
+            </div>
+            <button id=filteren class="flip">Filteren</button>
+            <button id=sorteren class="flip">Sorteren</button>
+            <form id="formFilteren" class="hidden">
+
+                <label id="woordenlabel" for="woorden">Woorden</label>
+                <div class="slidecontainer">
+                    <input id="woorden" type="range" min="10" max="89000" value="8900" class="slider">
+                </div>
+                <fieldset>
+                    <legend>
+                        Leesbaarheid</legend>
+                    <label class="containerr" for="Makkelijk">Makkelijk
+                        <input type="radio" name="lengte" value="simpel" checked="checked" id="Makkelijk">
+                        <span class="radiomark"></span></label>
+
+                    <label class="containerr" for="Normaal">Normaal
+                        <input type="radio" name="lengte" value="simpel" id="Normaal">
+                        <span class="radiomark"></span></label>
+
+                    <label class="containerr" for="Moeilijk">Moeilijk
+                        <input type="radio" name="lengte" value="simpel" id="Moeilijk">
+                        <span class="radiomark"></span></label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Thema </legend> <select name="Thema">
+                        <option value="verbazend">Verbazend</option>
+                        <option value="ingewikkeld">Ingewikkeld</option>
+                        <option value="vrolijk">Vrolijk</option>
+                        <option value="eng">Eng</option>
+                        <option value="simpel">Simpel</option>
+                        <option value="romantisch">Romantisch</option>
+                        <option value="grappig">Grappig</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Vorm </legend>
+                    <label class="containerr" for="Simpel">Simpel
+                        <input class="focus" type="radio" name="lengte" value="simpel" id="Simpel">
+                        <span class="radiomark"></span></label>
+
+                    <label class="containerr" for="Normaalt">Normaal
+                        <input class="focus" type="radio" name="lengte" value="normaal" id="Normaalt">
+                        <span class="radiomark"></span></label>
+
+                    <label class="containerr" for="Ingewikkeld">Ingewikkeld
+                        <input class="focus" type="radio" name="lengte" value="ingewikkeld" id="Ingewikkeld">
+                        <span class="radiomark"></span></label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Leesbaarheid </legend>
+                    <label class="container">Makkelijk
+                        <input type="checkbox" name="filter" value="makkelijk">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Moeilijk
+                        <input type="checkbox" name="filter" value="moeilijk">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Nederlands
+                        <input type="checkbox" name="filter" value="nederlands">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Engels
+                        <input type="checkbox" name="filter" value="engels">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <button class=filterKnop type="submit" formaction="pagina2.html">Filter</button>
+            </form>
+
+            <form id="formSorteren" action="pagina2.html" class="hidden">
+                <fieldset>
+                    <input type="radio" name="lengte" id="kortl" value="kort" checked>
+                    <label class="containerrr" for="kortl">Kort > Lang</label>
+
+                    <input type="radio" name="lengte" id="langk" value="lang" checked>
+                    <label class="containerrr" for="langk">Lang > Kort</label>
+
+                    <input type="radio" name="lengte" id="makkelijkm" value="makkelijk" checked>
+                    <label class="containerrr" for="makkelijkm">Makkelijk > Moeilijk Leesbaar</label>
+
+                    <input type="radio" name="lengte" id="moeilijkm" value="moeilijk" checked>
+                    <label class="containerrr" for="moeilijkm">Moeilijk > Makkelijk Leesbaar</label>
+
+                    <button class=filterKnop type="submit" formaction="pagina2.html">Sorteer</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <main>
+            <article class="rand">
+                <a href="verhaal.html">
+                    <img src="_img/Schermafbeelding%202018-11-23%20om%2011.52.46.png" alt="alzheimer"></a>
+                <button class="voor"></button>
+                <a href="verhaal.html">
+                    <h2>Alzheimer</h2>
+
+                    <p>Ik stap uit, euh... Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente...
+                    </p>
+                </a>
+            </article>
+
+            <article class="rand">
+                <a href="verhaal.html">
+                    <img src="_img/Verhalen/Droom%203%20L%2060em.jpg" alt='alzheimer'></a>
+                <button class="voor"></button><a href="verhaal.html">
+                    <h2>Droom</h2>
+
+                    <p>Ik stap uit, euh... Hoe heet het?
+                    </p>
+                </a>
+            </article>
+
+            <article class="rand"><a href="verhaal.html">
+                    <img src="_img/Verhalen/Regionaal%20Dagblad%2060%20L%2060em.jpg" alt='alzheimer'></a>
+                <button class="voor"></button>
+                <a href="verhaal.html">
+                    <h2>Regionaal</h2>
+
+                    <p>Ik stap uit, euh... Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente...
+                    </p>
+                </a>
+            </article>
+
+
+            <footer>
+                <p>
+                </p>
+            </footer>
+        </main>
+        <script src="java.js"></script>
+    </div>
+</body>
+
+</html>
